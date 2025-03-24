@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-    /// @brief 
+    /// @brief Entry point of the program that prints "Hello World!"
 int main()
 {
     cout<<"Hello World !";

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #file-list {
+            margin-bottom: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repository Viewer</h1>
+    <div id="file-list">
+        <h2>Files in Repository:</h2>
+        <ul id="files"></ul>
+    </div>
+    <div id="file-content">
+        <h2>File Content:</h2>
+        <pre id="content">Select a file to view its content.</pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
