@@ -1,5 +1,14 @@
 # C++ (Beginner to Expert)
 
+Compile and Run Each File:
+
+Use a C++ compiler like g++ to compile each file:
+
+g++ -o Step1 CPP001_First_Program.cpp 
+./Step1
+
+
+
 ![C++](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/213px-ISO_C%2B%2B_Logo.svg.png)
 
 ***Basic to Expert level concepts implemented using the C++ language.***
