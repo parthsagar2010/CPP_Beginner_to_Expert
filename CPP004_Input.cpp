@@ -2,7 +2,7 @@
 
 using namespace std;
 
-main()
+int main()
 {
     // cin - console input
     int a;
@@ -18,5 +18,5 @@ main()
     cin >> surname;
 
     cout << "Welcome "<<name<<" "<<surname<<endl;
-
+    return 0;
 }
