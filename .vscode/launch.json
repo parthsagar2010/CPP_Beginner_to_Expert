@@ -5,11 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "C++ Launch Active File",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe", // Dynamically use the active file's name
+            "stopAtEntry": false,
+            "launchCompleteCommand": "exec-run",
+            "windows": {
+                "MIMode": "gdb",
+                "miDebuggerPath": "C:/MinGW/bin/gdb.exe"
+            },
+            "targetArchitecture": "x86_64", // Ensure this matches your system
+            "preLaunchTask": "C/C++: gcc.exe build active file PARTH" // Build the active file before debugging
+        },
+        {
             "name": "C++ Launch123",
             "type": "cppdbg",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/a.exe",
+            "program": "${workspaceFolder}/${input:executableName}.exe", // Use input variable
             "stopAtEntry": false,
             "launchCompleteCommand": "exec-run",
             "windows": {
@@ -39,5 +54,13 @@
             ]
         }
 
+    ],
+    "inputs": [
+        {
+            "id": "executableName", // Input ID
+            "type": "promptString", // Prompt for input
+            "description": "Enter the name of the executable (without .exe)", // Message shown to the user
+            "default": "a" // Default value
+        }
     ]
 }

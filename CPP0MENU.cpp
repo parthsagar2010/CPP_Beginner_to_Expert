@@ -24,16 +24,16 @@ int main() {
         cin >> choice;
 
         switch (choice) {
-            case 1:
+            case 4:
                 system("./CPP001_First_Program"); // Run the executable for CPP001_First_Program
                 break;
-            case 2:
+            case 5:
                 system("./CPP002_Variables"); // Run the executable for CPP002_Variables
                 break;
-            case 3:
+            case 6:
                 system("./CPP004_Input"); // Run the executable for CPP004_Input
                 break;
-            case 4:
+            case 7:
                 system("./PR5"); // Run the executable for PR5
                 break;
             case 0:

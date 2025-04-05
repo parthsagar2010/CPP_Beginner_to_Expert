@@ -2,8 +2,8 @@
 using namespace std;
 
     /// @brief Entry point of the program that prints "Hello World!"
-int main()
+main()
 {
     cout<<"Hello World !";
-    return 0;
+//    return 0;
 }

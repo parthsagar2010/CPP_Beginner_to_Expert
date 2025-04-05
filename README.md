@@ -4,10 +4,18 @@ Compile and Run Each File:
 
 Use a C++ compiler like g++ to compile each file:
 
+# run cpp file using command line
 g++ -o Step1 CPP001_First_Program.cpp 
 ./Step1
 
+# to debug
+Keep the .cpp file open and directly launch "C++ Launch Active File"
 
+## to just run & compile using a build task
+Keep the .cpp file open ctrl+shift+b "C/C++: gcc.exe build active file"
+
+### to just clean all exe
+run task "Clean Executables"
 
 ![C++](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/213px-ISO_C%2B%2B_Logo.svg.png)
 
